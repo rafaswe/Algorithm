@@ -1,0 +1,13 @@
+#include<stdio.h>
+int fibonacci(int n)
+{
+    return (n==0 || n==1)?n:fibonacci(n-1)+fibonacci(n-2);
+}
+int main()
+{
+    int n;
+    printf("Enter position : ");
+    scanf("%d",&n);
+    printf("%d th number of fibonacci Number : %d\n",n,fibonacci(n));
+
+}
