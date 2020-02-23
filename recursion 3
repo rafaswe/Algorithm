@@ -1,0 +1,13 @@
+#include<stdio.h>
+int factorial(int n)
+{
+    return (n!=0)? (n*factorial(n-1)): 1;
+}
+int main()
+{
+   int n;
+   printf("Which number's factorial you want?? => ");
+   scanf("%d",&n);
+    printf("%d's factorial value is = %d\n",n,factorial(n));
+}
+
